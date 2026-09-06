@@ -6,11 +6,29 @@
   const video = document.getElementById('introVideo');
   const titleCard = document.getElementById('titleCard');
   const site = document.getElementById('site');
+  const endingMusic = document.getElementById('endingMusic');
 
   let stage = 'gate';
 
+  function stopEndingMusic() {
+    if (!endingMusic) return;
+    endingMusic.pause();
+    endingMusic.currentTime = 0;
+  }
+
+  async function playEndingMusic() {
+    if (!endingMusic) return;
+    endingMusic.volume = 0.8;
+    try {
+      await endingMusic.play();
+    } catch (e) {
+      document.addEventListener('click', () => endingMusic.play().catch(() => {}), { once: true });
+    }
+  }
+
   async function startTransmission() {
     stage = 'video';
+    stopEndingMusic();
     gate.classList.remove('is-visible');
     site.classList.remove('is-visible');
     titleCard.classList.remove('is-visible');
@@ -32,6 +50,7 @@
     setTimeout(() => {
       titleCard.classList.remove('is-visible');
       site.classList.add('is-visible');
+      playEndingMusic();
       stage = 'done';
     }, 2300);
   }

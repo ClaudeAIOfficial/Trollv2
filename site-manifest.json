@@ -15,5 +15,7 @@
     "troll_png": "assets/troll.png",
     "chaos_background": "assets/chaos-bg.png"
   },
-  "ending_page_style": "chaotic background with centered pointing troll and two CTA buttons"
+  "ending_page_style": "chaotic background with centered pointing troll and two CTA buttons",
+  "ending_music": "assets/trollololo-loop.wav",
+  "title_font_style": "MLG-style gamer typography using Bungee and Press Start 2P"
 }

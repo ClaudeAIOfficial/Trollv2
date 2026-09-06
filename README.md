@@ -19,3 +19,8 @@ This package now includes all requested ending-page updates:
 
 ## Deploy
 This is a static site. Upload the whole folder to GitHub / Vercel / Netlify / Cloudflare Pages.
+
+
+## Latest update
+- Added looping ending-page music (`assets/trollololo-loop.wav`) that starts when the final 2-button page appears.
+- Updated the `Troll on Robinhood` title card to a louder MLG-style gamer font treatment using Bungee + Press Start 2P with layered shadows.

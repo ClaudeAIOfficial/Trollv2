@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Press+Start+2P&display=swap');
+
 
 :root {
   --paper: #f2f0ea;
@@ -117,23 +119,37 @@ button, a { font: inherit; }
 }
 .title-card h1 {
   margin: 0;
-  font-family: Arial Black, Impact, sans-serif;
+  font-family: 'Bungee', Arial Black, Impact, sans-serif;
   font-size: clamp(92px, 16vw, 220px);
   line-height: .8;
   letter-spacing: -.07em;
   color: var(--paper);
   text-transform: uppercase;
-  text-shadow: 0 0 26px rgba(255,255,255,.06), 0 0 70px rgba(159,232,112,.18);
+  text-shadow:
+    0 2px 0 #000,
+    0 4px 0 #000,
+    4px 4px 0 rgba(99,204,73,.95),
+    -4px 4px 0 rgba(255,255,255,.18),
+    0 0 30px rgba(159,232,112,.30);
+  transform: skew(-4deg);
 }
+
 .title-card h2 {
-  margin: 6px 0 0;
-  font-family: Georgia, 'Times New Roman', serif;
+  margin: 10px 0 0;
+  font-family: 'Press Start 2P', 'Bungee', Arial Black, Impact, sans-serif;
   font-weight: 700;
   font-size: clamp(24px, 4.2vw, 58px);
-  line-height: .95;
-  letter-spacing: .03em;
-  color: var(--green);
+  line-height: 1.15;
+  letter-spacing: .04em;
+  color: #ffffff;
+  text-shadow:
+    0 2px 0 #000,
+    0 4px 0 #000,
+    3px 3px 0 rgba(99,204,73,.95),
+    -3px 3px 0 rgba(255,255,255,.20),
+    0 0 24px rgba(159,232,112,.28);
 }
+
 
 .site {
   z-index: 20;
@@ -230,3 +246,5 @@ button, a { font: inherit; }
   .icon-link img { width: 32px; height: 32px; }
   .gmgn-link img { width: 42px; height: 42px; }
 }
+
+.ending-music { display: none; }
