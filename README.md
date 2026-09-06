@@ -14,7 +14,7 @@ This package now includes all requested ending-page updates:
 - `assets/x.svg` = X icon
 
 ## Links
-- X: `https://x.com`
+- X: `https://x.com/Trollonhood_`
 - GMGN: `https://gmgn.ai/?chain=robinhood`
 
 ## Deploy
