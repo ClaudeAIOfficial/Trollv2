@@ -30,3 +30,8 @@ https://d8j0ntlcm91z4.cloudfront.net/user_3DFeZk0LqgiFcue7STVOyiCo13m/hf_2026090
 
 If you want the site fully self-hosted, download the MP4 into `assets/intro.mp4`
 and replace the `src` on `#introVideo` inside `index.html`.
+
+
+## Latest update
+- Replaced the landing-page Troll with the down-pointing pose so the hands line up with the X and GMGN buttons.
+- Widened and repositioned the buttons to sit under each pointing hand.

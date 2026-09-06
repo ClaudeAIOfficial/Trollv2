@@ -177,25 +177,25 @@ button, a { font: inherit; }
 .troll {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -51%);
-  width: min(68vw, 760px);
-  max-height: 82vh;
+  top: 43%;
+  transform: translate(-50%, -50%);
+  width: min(58vw, 700px);
+  max-height: 72vh;
   object-fit: contain;
   filter: drop-shadow(0 0 34px rgba(159,232,112,.12)) drop-shadow(0 0 120px rgba(159,232,112,.08));
 }
 .icon-links {
   position: absolute;
   left: 50%;
-  bottom: 30px;
+  top: 72%;
   transform: translateX(-50%);
   z-index: 5;
   display: flex;
-  gap: 16px;
+  gap: clamp(86px, 14vw, 170px);
 }
 .icon-link {
-  width: 64px;
-  height: 64px;
+  width: 76px;
+  height: 76px;
   border-radius: 16px;
   border: 1px solid rgba(255,255,255,.12);
   background: rgba(0,0,0,.58);
@@ -211,13 +211,13 @@ button, a { font: inherit; }
   outline: none;
 }
 .icon-link img {
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   object-fit: contain;
 }
 .gmgn-link img {
-  width: 40px;
-  height: 40px;
+  width: 46px;
+  height: 46px;
   image-rendering: pixelated;
 }
 
@@ -232,8 +232,8 @@ button, a { font: inherit; }
 @media (max-width: 720px) {
   .title-card h1 { font-size: clamp(88px, 28vw, 150px); }
   .title-card h2 { font-size: clamp(22px, 7vw, 38px); }
-  .troll { width: min(92vw, 620px); }
+  .troll { width: min(94vw, 560px); top: 40%; }
   .hero-copy { left: 22px; top: 24px; }
-  .icon-links { bottom: 24px; }
-  .icon-link { width: 58px; height: 58px; }
+  .icon-links { top: 67%; gap: min(22vw, 96px); }
+  .icon-link { width: 64px; height: 64px; }
 }
