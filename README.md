@@ -1,36 +1,32 @@
-# TROLL — Website Handoff Build
 
-This version is designed around the finished 30-second Higgsfield prank video.
+# Troll on Robinhood
 
-## Experience
-1. Visitor clicks **START TRANSMISSION** once. This is required for unmuted browser video playback.
-2. The 30-second prank anthology fills the entire viewport.
-3. During the **final Troll NEXT / zoom-into-screen move**, the real website begins revealing.
-4. The last push into the cinema screen becomes the transition into the live website.
-5. The destination page is full-screen, minimal, uncanny, and has a working **REPLAY BROADCAST** action.
+This build changes the ending flow:
 
-## Handoff timing
-`app.js` starts the website reveal around the final 0.82 seconds of the video.  
-If the generated final push lands earlier/later in a future render, adjust:
+1. Visitor clicks **START TRANSMISSION**.
+2. The 30-second prank intro video plays full-screen with sound.
+3. After the last scene ends, the screen cuts to a title card:
+   **Troll on Robinhood**
+4. After that, it opens a very simple landing page:
+   - full-screen smug Troll pose
+   - X logo button
+   - GMGN logo button
 
-```js
-if (remaining <= 0.82)
-```
+## Files
+- `index.html`
+- `styles.css`
+- `app.js`
+- `assets/troll.png`
+- `assets/gmgn.png`
+- `assets/x.svg`
 
-## Deploy
-Static site — no build step.
+## Links to replace if needed
+- X: `https://x.com`
+- GMGN: `https://gmgn.ai/?chain=robinhood`
 
-GitHub Pages / Netlify / Cloudflare Pages:
-- upload this folder
-- serve `index.html`
-
-Vercel:
-- import repository
-- Framework Preset: **Other**
-- no build command required
-
-## Video
-The intro uses the completed Higgsfield 30-second render:
+## Intro video source
+The full-screen intro video is currently loaded from:
 https://d8j0ntlcm91z4.cloudfront.net/user_3DFeZk0LqgiFcue7STVOyiCo13m/hf_20260906_112355_79fe8c8d-9d50-4336-9ff3-762136692f84.mp4
 
-For a fully self-hosted deployment, download the MP4 into `assets/intro.mp4` and replace the `<video src>` in `index.html`.
+If you want the site fully self-hosted, download the MP4 into `assets/intro.mp4`
+and replace the `src` on `#introVideo` inside `index.html`.

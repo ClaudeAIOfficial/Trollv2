@@ -1,11 +1,14 @@
 {
+  "title": "Troll on Robinhood",
+  "flow": [
+    "gate",
+    "30s intro video",
+    "title card",
+    "simple site"
+  ],
   "intro_video": "https://d8j0ntlcm91z4.cloudfront.net/user_3DFeZk0LqgiFcue7STVOyiCo13m/hf_20260906_112355_79fe8c8d-9d50-4336-9ff3-762136692f84.mp4",
-  "handoff": {
-    "description": "Reveal site during final NEXT-button push into cinema screen",
-    "trigger_seconds_remaining": 0.82
-  },
-  "destination": {
-    "title": "TROLL",
-    "subtitle": "HE'S STILL WATCHING."
+  "links": {
+    "x": "https://x.com",
+    "gmgn": "https://gmgn.ai/?chain=robinhood"
   }
 }

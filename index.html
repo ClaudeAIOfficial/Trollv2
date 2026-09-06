@@ -3,84 +3,54 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Troll Network" />
-  <title>TROLL</title>
+  <meta name="theme-color" content="#050706" />
+  <meta name="description" content="Troll on Robinhood" />
+  <title>Troll on Robinhood</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main id="app">
-    <section id="gate" class="gate visible">
-      <div class="gateNoise"></div>
-      <button id="playBtn" class="playButton" type="button" aria-label="Start transmission">
-        <span class="playMark">▶</span>
+  <main class="app">
+    <section id="gate" class="gate is-visible">
+      <div class="noise"></div>
+      <button id="playBtn" class="play-btn" type="button">
+        <span>▶</span>
         <span>START TRANSMISSION</span>
       </button>
     </section>
 
-    <section id="broadcast" class="broadcast" aria-label="Opening broadcast">
-      <video
-        id="introVideo"
-        class="introVideo"
-        src="https://d8j0ntlcm91z4.cloudfront.net/user_3DFeZk0LqgiFcue7STVOyiCo13m/hf_20260906_112355_79fe8c8d-9d50-4336-9ff3-762136692f84.mp4"
-        playsinline
-        preload="auto"
-        disablepictureinpicture
-        controlslist="nodownload noplaybackrate noremoteplayback"
-      ></video>
-
+    <section id="broadcast" class="broadcast">
+      <video id="introVideo" class="intro-video" src="https://d8j0ntlcm91z4.cloudfront.net/user_3DFeZk0LqgiFcue7STVOyiCo13m/hf_20260906_112355_79fe8c8d-9d50-4336-9ff3-762136692f84.mp4" playsinline preload="auto" disablepictureinpicture controlslist="nodownload noplaybackrate noremoteplayback"></video>
       <div class="crt scanlines"></div>
       <div class="crt grain"></div>
       <div class="crt vignette"></div>
-      <div id="handoffBloom" class="handoffBloom"></div>
     </section>
 
-    <section id="site" class="site" aria-label="Troll Network website">
-      <div class="siteNoise"></div>
-      <div class="siteScan"></div>
-
-      <header class="topbar">
-        <div class="brand">TROLL</div>
-        <div class="signal">
-          <span class="liveDot"></span>
-          SIGNAL LIVE
-        </div>
-      </header>
-
-      <div class="hero">
-        <div class="heroCopy">
-          <p class="eyebrow">CHANNEL 00 // PRIVATE BROADCAST</p>
-          <h1>TROLL</h1>
-          <p class="subline">HE'S STILL WATCHING.</p>
-          <p class="smallCopy">
-            Every channel is another bad idea.
-            Every bad idea gets recorded.
-          </p>
-
-          <button id="replayBtn" class="replay" type="button">
-            <span>↻</span>
-            REPLAY BROADCAST
-          </button>
-        </div>
-
-        <div class="trollStage" aria-hidden="true">
-          <div class="screenGlow"></div>
-          <img class="trollImage" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3DFeZk0LqgiFcue7STVOyiCo13m/9f9cea90-e38c-44af-b26e-2dfc36b8004a.png" alt="" />
-          <div class="shadowCopy shadowOne">TROLL</div>
-          <div class="shadowCopy shadowTwo">TROLL</div>
-        </div>
+    <section id="titleCard" class="title-card">
+      <div class="title-noise"></div>
+      <div class="title-inner">
+        <p class="title-kicker">FINAL CHANNEL ACQUIRED</p>
+        <h1>Troll</h1>
+        <h2>on Robinhood</h2>
       </div>
+    </section>
 
-      <div class="footerLine">
-        <span>NO SCHEDULE</span>
-        <span>NO WARNING</span>
-        <span>JUST NEXT</span>
+    <section id="site" class="site">
+      <div class="site-bg"></div>
+      <div class="site-noise"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">TROLL ON ROBINHOOD</p>
       </div>
-
-      <div id="siteStatic" class="siteStatic"></div>
+      <img class="troll" src="assets/troll.png" alt="Troll character" />
+      <nav class="icon-links" aria-label="Project links">
+        <a class="icon-link x-link" href="https://x.com" target="_blank" rel="noreferrer" aria-label="X">
+          <img src="assets/x.svg" alt="" />
+        </a>
+        <a class="icon-link gmgn-link" href="https://gmgn.ai/?chain=robinhood" target="_blank" rel="noreferrer" aria-label="GMGN">
+          <img src="assets/gmgn.png" alt="" />
+        </a>
+      </nav>
     </section>
   </main>
-
   <script src="app.js"></script>
 </body>
 </html>
