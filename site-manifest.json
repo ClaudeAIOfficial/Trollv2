@@ -10,5 +10,10 @@
   "links": {
     "x": "https://x.com",
     "gmgn": "https://gmgn.ai/?chain=robinhood"
-  }
+  },
+  "ending_assets": {
+    "troll_png": "assets/troll.png",
+    "chaos_background": "assets/chaos-bg.png"
+  },
+  "ending_page_style": "chaotic background with centered pointing troll and two CTA buttons"
 }
